@@ -8,3 +8,13 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+
+
+test { 
+    useJunitPlatform()
+}
+
+dependincies {
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.10.0-M1'
+}
